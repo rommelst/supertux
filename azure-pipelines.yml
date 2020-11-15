@@ -1,0 +1,10 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    cmake --build . --config Release
+  displayName: 'Compiling and linking...'
